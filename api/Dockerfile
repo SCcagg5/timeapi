@@ -1,4 +1,4 @@
-FROM python:3.7 AS BACK_END
+FROM python:latest AS BACK_END
 
 LABEL maintainer="Courtel Eliot"
 LABEL maintainermail="eliot.courtel@wanadoo.fr"
@@ -8,5 +8,5 @@ RUN apt-get install git -y
 
 
 ENTRYPOINT ls;\
-	   pip3 install -r requirements.txt && python3 server.py > /dev/null; \
-	   /bin/bash
+		 pip install --upgrade pip && \
+	   pip install --upgrade -r requirements.txt && python3 server.py;

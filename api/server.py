@@ -27,8 +27,5 @@ def error(error):
     return JSON.dumps(toret.ret())
 
 if __name__ == '__main__':
-    try:
-        setuproute(app, call)
-        run(app, host=host, port=port, debug=True)
-    except:
-        os._exit(0)
+    setuproute(app, call)
+    run(app, host=host, port=port, debug=True)
