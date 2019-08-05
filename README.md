@@ -11,11 +11,13 @@ To enable this on a calendar:
 1. rename it `credentials_YOURMAIL.json`
 2. go to `./timeapi/api`
 3. launch `pip3 install --upgrade -r requirements.txt && python3 ./Object/evts.py YOURMAIL` and click the link given to you, follow the step and give acces to your calendar
+
 4. verify that `token_YOURMAIL.pickle` have been created
 5. launch the docker using `docker-compose up -d --build`
 6. test that `http://localhost:80801/test/` is working
 7. request api
 
+Steps 0 to 3 are to do in localhost
 
 To add multiple users:
 
