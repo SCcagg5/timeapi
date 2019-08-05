@@ -6,6 +6,7 @@ route | arg | method | desc |
 `/dispo/` | `[]` | GET | return next 10 rdv
 
 To enable this on a calendar:
+
 0. go to: https://developers.google.com/calendar/quickstart/python#step_1_turn_on_the and download the `credentials.json` and put it in `./timeapi/api`
 1. rename it `credentials_YOURMAIL.json`
 2. go to `./timeapi/api`
@@ -17,6 +18,7 @@ To enable this on a calendar:
 
 
 To add multiple users:
+
 0. get all the `credentials.json`
 1. rename them `credentials_MAIL_N.json`
 3. launch `python3 ./Object/evts.py MAIL_1 MAIL_2 MAIL_3 ... MAIL_N`
